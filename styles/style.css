@@ -1,0 +1,160 @@
+:root {
+  --primary: #a47dab;
+  --secondary: #826387;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../assets/flower/background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f0f0f0;
+  font-family: "Onest", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  width: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  visibility: hidden;
+  position: relative;
+  overflow: hidden;
+}
+.container > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35vh;
+}
+.container div.greeting {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.container div.greeting span.nama {
+  background: -webkit-linear-gradient(45deg, var(--primary), var(--secondary));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container div.one {
+  font-size: 5rem;
+  font-weight: 700;
+  font-style: italic;
+}
+.container div.one span.emoji {
+  font-style: initial;
+}
+
+.container div.two,
+.container div.three,
+.container div.five,
+.container div.six,
+.container div.seven,
+.container div.eight,
+.container div.nine {
+  font-size: 3rem;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.container div.three span {
+  font-style: italic;
+  font-weight: 500;
+}
+.container div.four {
+  width: 100%;
+}
+.container div.four h2.age {
+  display: flex;
+}
+.container div.four h2.age span {
+  font-size: 15rem;
+  font-weight: 700;
+  animation: rotateScale 2s linear;
+}
+.container .four .event1 {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  transform: translateX(-1rem);
+}
+
+.container div.four div.event1 div.lilac {
+  width: 12rem;
+  transform: translateY(-1rem);
+}
+.container div.four div.event1 div.lilac.satu {
+  rotate: 30deg;
+}
+.container div.four div.event1 div.lilac.dua {
+  rotate: -30deg;
+}
+
+.container div.ten {
+  display: flex;
+  flex-direction: column;
+  margin: -5.5rem auto;
+  z-index: 1;
+  line-height: 3rem;
+}
+.container div.ten p {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+.container div.ten button {
+  width: fit-content;
+  background-color: var(--primary);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 1.5rem;
+}
+.container div.ten button:hover {
+  background-color: var(--secondary);
+}
+
+.container div.flower {
+  display: flex;
+  top: -100;
+}
+.container div.flower img {
+  width: 30rem;
+  margin: 0 auto;
+  animation: skew 30s linear infinite;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(0deg);
+  }
+  25% {
+    transform: skewX(-5deg);
+  }
+  50% {
+    transform: skewX(0deg);
+  }
+  75% {
+    transform: skewX(5deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
