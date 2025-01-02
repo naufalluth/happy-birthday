@@ -64,23 +64,34 @@ body {
 .container div.eight,
 .container div.nine {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 300;
   width: fit-content;
 }
-
+.container div.three .block-text {
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  background-size: 200% 100%;
+  background: linear-gradient(to right, #2882d6, #2770df);
+  animation: blockText 5s linear forwards;
+}
 .container div.three span {
   font-style: italic;
   font-weight: 500;
+}
+.container div.three p.wish-text3 {
+  transform: translateY(-1.5rem);
 }
 .container div.four {
   width: 100%;
 }
 .container div.four h2.age {
   display: flex;
+  transform: translateY(-1rem);
 }
 .container div.four h2.age span {
-  font-size: 15rem;
-  font-weight: 700;
+  font-size: 16rem;
+  font-weight: 30;
   animation: rotateScale 2s linear;
 }
 .container .four .event1 {
@@ -156,5 +167,83 @@ body {
   }
   100% {
     transform: skewX(0deg);
+  }
+}
+@keyframes blockText {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 25% 0;
+  }
+  50% {
+    width: 50% 0;
+  }
+  100% {
+    width: 100% 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("../assets/flower/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+  }
+
+  .container {
+    width: 100%;
+  }
+  .container div.greeting {
+    font-size: 4rem;
+  }
+  .container div.one {
+    font-size: 3rem;
+  }
+  .container div.two,
+  .container div.three,
+  .container div.five,
+  .container div.six,
+  .container div.seven,
+  .container div.eight,
+  .container div.nine {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  .container div.four h2.age span {
+    font-size: 10rem;
+  }
+  .container div.ten {
+    margin: -3.5rem auto;
+    text-align: center;
+  }
+  .container div.ten p {
+    font-size: 1.5rem;
+  }
+  .container div.ten button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .container div.flower img {
+    width: 28rem;
+  }
+
+  @keyframes skew {
+    0% {
+      transform: skewX(0deg);
+    }
+    25% {
+      transform: skewX(-3deg);
+    }
+    50% {
+      transform: skewX(0deg);
+    }
+    75% {
+      transform: skewX(3deg);
+    }
+    100% {
+      transform: skewX(0deg);
+    }
   }
 }
