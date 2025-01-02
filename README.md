@@ -6,6 +6,9 @@ Welcome to **Happy Birthday**! This is a simple website designed to help you cel
 
 Check out the live demo of the website: [Happy Birthday Live Demo](https://naufalluth.github.io/happy-birthday/)
 
+Cloudflare Pages:
+(https://happy-birthday-8t8.pages.dev/)
+
 ## Features
 
 - **Personalized Messages**: Customize the birthday message to add a personal touch.
@@ -30,15 +33,20 @@ Ensure you have the following installed on your system:
    ```bash
    git clone https://github.com/naufalluth/happy-birthday.git
 
+   ```
+
 2. **Customizing the Message:**
+
 - Open the index.html file in a text editor.
 - Locate the section containing the birthday message.
 - Modify the text to include the recipient's name and your personalized message.
 
 3. **Changing Styles:**
+
 - Navigate to the styles directory and open the style.css file.
 - Adjust the CSS code to change colors, fonts, and layout as desired.
 
 4. **Adding Music:**
+
 - Place your desired audio file in the assets directory.
 - Update the audio source in the scripts/main.js file to point to your new audio file.
